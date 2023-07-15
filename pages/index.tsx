@@ -1,4 +1,7 @@
 import React from "react";
+import Image from 'next/image'
+import Link from 'next/link'
+
 
 const IndexPage: React.FC = () => {
   return (
@@ -114,9 +117,9 @@ const IndexPage: React.FC = () => {
         <br />
 
         <ul className="playlist">
-          <a href="/example-link">
+          <Link href="/example-link">
             <li className="list-item">
-              <img className="list-item-image" src="" alt="img" />
+              <Image className="list-item-image" src=""/>
               <div className="list-item-info">
                 <div className="info-title">anothing title</div>
                 <div className="info-subtitle">subtitle</div>
@@ -140,13 +143,12 @@ const IndexPage: React.FC = () => {
                 </svg>
               </button>
             </li>
-          </a>
-          <a href="/example-link">
+          </Link>
+          <Link href="/example-link">
             <li className="list-item">
-              <img
+              <Image
                 className="list-item-image"
                 src=""
-                alt="img"
               />
               <div className="list-item-info">
                 <div className="info-title">anothing title</div>
@@ -171,13 +173,12 @@ const IndexPage: React.FC = () => {
                 </svg>
               </button>
             </li>
-          </a>
-          <a href="/example-link">
+          </Link>
+          <Link href="/example-link">
             <li className="list-item">
-              <img
+              <Image
                 className="list-item-image"
                 src=""
-                alt="img"
               />
               <div className="list-item-info">
                 <div className="info-title">one more title</div>
@@ -202,7 +203,7 @@ const IndexPage: React.FC = () => {
                 </svg>
               </button>
             </li>
-          </a>
+          </Link>
         </ul>
       </div>
     </div>
