@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link"
 
 const IndexPage: React.FC = () => {
   return (
@@ -114,7 +115,7 @@ const IndexPage: React.FC = () => {
         <br />
 
         <ul className="playlist">
-          <a href="/example-link">
+          <Link href="/example-link">
             <li className="list-item">
               <img className="list-item-image" src="" alt="img" />
               <div className="list-item-info">
@@ -140,8 +141,8 @@ const IndexPage: React.FC = () => {
                 </svg>
               </button>
             </li>
-          </a>
-          <a href="/example-link">
+          </Link>
+          <Link href="/example-link">
             <li className="list-item">
               <img
                 className="list-item-image"
@@ -171,8 +172,8 @@ const IndexPage: React.FC = () => {
                 </svg>
               </button>
             </li>
-          </a>
-          <a href="/example-link">
+          </Link>
+          <Link href="/example-link">
             <li className="list-item">
               <img
                 className="list-item-image"
@@ -202,7 +203,7 @@ const IndexPage: React.FC = () => {
                 </svg>
               </button>
             </li>
-          </a>
+          </Link>
         </ul>
       </div>
     </div>
