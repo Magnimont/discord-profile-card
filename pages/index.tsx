@@ -11,7 +11,7 @@ const IndexPage: React.FC = () => {
       <div className="content">
         <div className="content-header">
           <span className="content-title">
-            420420 <code>#6969</code>
+            username <code>#4241</code>
           </span>
           <button className="btn-all">
             <svg
@@ -119,8 +119,8 @@ const IndexPage: React.FC = () => {
             <li className="list-item">
               <img className="list-item-image" src="" alt="img" />
               <div className="list-item-info">
-                <div className="info-title">anothing title</div>
-                <div className="info-subtitle">subtitle</div>
+                <div className="info-title">Blox Fruit Fandom</div>
+                <div className="info-subtitle">Wiki</div>
               </div>
               <button className="btn-add">
                 <svg
@@ -142,11 +142,11 @@ const IndexPage: React.FC = () => {
               </button>
             </li>
           </Link>
-          <Link href="/example-link">
+          <Link href="https://blox-fruits.fandom.com/wiki/Blox_Fruits_Wiki">
             <li className="list-item">
               <img
                 className="list-item-image"
-                src=""
+                src="https://static.wikia.nocookie.net/roblox-blox-piece/images/4/48/BFLogoFull.png/revision/latest/scale-to-width-down/250?cb=20211203075302"
                 alt="img"
               />
               <div className="list-item-info">
