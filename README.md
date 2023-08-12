@@ -3,8 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 # Images
 
-<img src="https://cdn.discordapp.com/attachments/1120305844660211824/1139815306324349039/Screenshot_2023-08-12_at_12.28.25_PM.png")
-
+<img src="https://cdn.discordapp.com/attachments/1120305844660211824/1139815306324349039/Screenshot_2023-08-12_at_12.28.25_PM.png" alt="Good Morning Friends"/>  
 
 ## Getting Started
 
