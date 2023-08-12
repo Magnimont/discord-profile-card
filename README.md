@@ -2,9 +2,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) that clones the discord profile card.
 
 # Images
-![image](![image](![image](https://github.com/NoErrorStudio/discord-profile-card/assets/71127774/07ea4118-00be-4ad1-887b-7c000d453be0)
+![image](![image](https://cdn.discordapp.com/attachments/1120305844660211824/1139815306324349039/Screenshot_2023-08-12_at_12.28.25_PM.png)
 )
-)
+
 
 ## Getting Started
 
