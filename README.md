@@ -5,8 +5,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ![image](https://github.com/avalynndev/discord-profile-card/assets/100826194/881a65f3-d374-4f9b-adc1-56cc0057ddf9)
 
 ## Getting Started
+First create a new file with `.env.local` name, and copy `example.env` contents to it.
+If you want to, you can update the values.
 
-First, run the development server:
+Then, run the development server:
 
 ```bash
 npm run dev
