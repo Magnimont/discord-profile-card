@@ -1,6 +1,28 @@
 import React from "react";
 import Link from "next/link"
 
+const NEXT_PUBLIC_USERNAME = process.env.NEXT_PUBLIC_USERNAME
+const NEXT_PUBLIC_HASTAG = process.env.NEXT_PUBLIC_HASTAG
+
+const NEXT_PUBLIC_TextLine1 = process.env.NEXT_PUBLIC_TextLine1
+const NEXT_PUBLIC_TextLine2 = process.env.NEXT_PUBLIC_TextLine2
+const NEXT_PUBLIC_TextLine3 = process.env.NEXT_PUBLIC_TextLine3
+
+const NEXT_PUBLIC_ImageLink1 = process.env.NEXT_PUBLIC_ImageLink1
+const NEXT_PUBLIC_Title1 = process.env.NEXT_PUBLIC_Title1
+const NEXT_PUBLIC_Subtitle1 = process.env.NEXT_PUBLIC_Subtitle1
+const NEXT_PUBLIC_Link1 = process.env.NEXT_PUBLIC_Link1
+
+const NEXT_PUBLIC_ImageLink2 = process.env.NEXT_PUBLIC_ImageLink2
+const NEXT_PUBLIC_Title2 = process.env.NEXT_PUBLIC_Title2
+const NEXT_PUBLIC_Subtitle2 = process.env.NEXT_PUBLIC_Subtitle2
+const NEXT_PUBLIC_Link2 = process.env.NEXT_PUBLIC_Link2
+
+const NEXT_PUBLIC_ImageLink3 = process.env.NEXT_PUBLIC_ImageLink3
+const NEXT_PUBLIC_Title3 = process.env.NEXT_PUBLIC_Title3
+const NEXT_PUBLIC_Subtitle3 = process.env.NEXT_PUBLIC_Subtitle3
+const NEXT_PUBLIC_Link3 = process.env.NEXT_PUBLIC_Link3
+
 const IndexPage: React.FC = () => {
   return (
     <div className="music-app">
@@ -11,7 +33,7 @@ const IndexPage: React.FC = () => {
       <div className="content">
         <div className="content-header">
           <span className="content-title">
-            username <code>#4241</code>
+            {NEXT_PUBLIC_USERNAME} <code>{NEXT_PUBLIC_HASTAG}</code>
           </span>
           <button className="btn-all">
             <svg
@@ -115,12 +137,25 @@ const IndexPage: React.FC = () => {
         <br />
 
         <ul className="playlist">
-          <Link href="/example-link">
             <li className="list-item">
-              <img className="list-item-image" src="" alt="img" />
               <div className="list-item-info">
-                <div className="info-title">Blox Fruit Fandom</div>
-                <div className="info-subtitle">Wiki</div>
+                <div className="info">About Me</div>
+                <div className="info-subtitle">
+                  <br/>
+                 {NEXT_PUBLIC_TextLine1}
+                  <br/>
+                  {NEXT_PUBLIC_TextLine2}
+                  <br/>
+                  {NEXT_PUBLIC_TextLine3}
+                </div>
+              </div>
+            </li>
+          <Link href={NEXT_PUBLIC_Link1}>
+            <li className="list-item">
+              <img className="list-item-image" src={NEXT_PUBLIC_ImageLink1} alt="img" />
+              <div className="list-item-info">
+                <div className="info-title">{NEXT_PUBLIC_Title1}</div>
+                <div className="info-subtitle">{NEXT_PUBLIC_Subtitle1}</div>
               </div>
               <button className="btn-add">
                 <svg
@@ -142,16 +177,12 @@ const IndexPage: React.FC = () => {
               </button>
             </li>
           </Link>
-          <Link href="https://blox-fruits.fandom.com/wiki/Blox_Fruits_Wiki">
+          <Link href={NEXT_PUBLIC_Link2}>
             <li className="list-item">
-              <img
-                className="list-item-image"
-                src="https://static.wikia.nocookie.net/roblox-blox-piece/images/4/48/BFLogoFull.png/revision/latest/scale-to-width-down/250?cb=20211203075302"
-                alt="img"
-              />
+              <img className="list-item-image" src={NEXT_PUBLIC_ImageLink2} alt="img" />
               <div className="list-item-info">
-                <div className="info-title">anothing title</div>
-                <div className="info-subtitle">subtitle</div>
+                <div className="info-title">{NEXT_PUBLIC_Title2}</div>
+                <div className="info-subtitle">{NEXT_PUBLIC_Subtitle2}</div>
               </div>
               <button className="btn-add">
                 <svg
@@ -173,16 +204,12 @@ const IndexPage: React.FC = () => {
               </button>
             </li>
           </Link>
-          <Link href="/example-link">
+          <Link href={NEXT_PUBLIC_Link3}>
             <li className="list-item">
-              <img
-                className="list-item-image"
-                src=""
-                alt="img"
-              />
+              <img className="list-item-image" src={NEXT_PUBLIC_ImageLink3} alt="img" />
               <div className="list-item-info">
-                <div className="info-title">one more title</div>
-                <div className="info-subtitle">subtitle</div>
+                <div className="info-title">{NEXT_PUBLIC_Title3}</div>
+                <div className="info-subtitle">{NEXT_PUBLIC_Subtitle3}</div>
               </div>
               <button className="btn-add">
                 <svg
