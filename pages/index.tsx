@@ -150,7 +150,7 @@ const IndexPage: React.FC = () => {
                 </div>
               </div>
             </li>
-          <Link href={NEXT_PUBLIC_Link1}>
+          {NEXT_PUBLIC_Link1 && <Link href={NEXT_PUBLIC_Link1}>
             <li className="list-item">
               <img className="list-item-image" src={NEXT_PUBLIC_ImageLink1} alt="img" />
               <div className="list-item-info">
@@ -176,8 +176,8 @@ const IndexPage: React.FC = () => {
                 </svg>
               </button>
             </li>
-          </Link>
-          <Link href={NEXT_PUBLIC_Link2}>
+          </Link>}
+          {NEXT_PUBLIC_Link2 && <Link href={NEXT_PUBLIC_Link2}>
             <li className="list-item">
               <img className="list-item-image" src={NEXT_PUBLIC_ImageLink2} alt="img" />
               <div className="list-item-info">
@@ -203,8 +203,8 @@ const IndexPage: React.FC = () => {
                 </svg>
               </button>
             </li>
-          </Link>
-          <Link href={NEXT_PUBLIC_Link3}>
+          </Link>}
+          {NEXT_PUBLIC_Link3 && <Link href={NEXT_PUBLIC_Link3}>
             <li className="list-item">
               <img className="list-item-image" src={NEXT_PUBLIC_ImageLink3} alt="img" />
               <div className="list-item-info">
@@ -230,7 +230,7 @@ const IndexPage: React.FC = () => {
                 </svg>
               </button>
             </li>
-          </Link>
+          </Link> }
         </ul>
       </div>
     </div>
